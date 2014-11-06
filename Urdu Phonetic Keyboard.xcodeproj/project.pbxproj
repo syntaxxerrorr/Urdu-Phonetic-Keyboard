@@ -13,6 +13,8 @@
 		296D48681A0B6BEB004F9782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296D48671A0B6BEB004F9782 /* Images.xcassets */; };
 		296D486B1A0B6BEB004F9782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296D48691A0B6BEB004F9782 /* LaunchScreen.xib */; };
 		296D48771A0B6BEC004F9782 /* Urdu_Phonetic_KeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D48761A0B6BEC004F9782 /* Urdu_Phonetic_KeyboardTests.swift */; };
+		296D48891A0B6BFE004F9782 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D48881A0B6BFE004F9782 /* KeyboardViewController.swift */; };
+		296D488C1A0B6BFE004F9782 /* Urdu Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 296D48841A0B6BFE004F9782 /* Urdu Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,28 @@
 			remoteGlobalIDString = 296D485A1A0B6BEB004F9782;
 			remoteInfo = "Urdu Phonetic Keyboard";
 		};
+		296D488A1A0B6BFE004F9782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 296D48531A0B6BEB004F9782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 296D48831A0B6BFE004F9782;
+			remoteInfo = "Urdu Keyboard";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		296D48901A0B6BFE004F9782 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				296D488C1A0B6BFE004F9782 /* Urdu Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		296D485B1A0B6BEB004F9782 /* Urdu Phonetic Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urdu Phonetic Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +59,9 @@
 		296D48701A0B6BEC004F9782 /* Urdu Phonetic KeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Urdu Phonetic KeyboardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		296D48751A0B6BEC004F9782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		296D48761A0B6BEC004F9782 /* Urdu_Phonetic_KeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urdu_Phonetic_KeyboardTests.swift; sourceTree = "<group>"; };
+		296D48841A0B6BFE004F9782 /* Urdu Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Urdu Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		296D48871A0B6BFE004F9782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		296D48881A0B6BFE004F9782 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		296D48811A0B6BFE004F9782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +94,7 @@
 			children = (
 				296D485D1A0B6BEB004F9782 /* Urdu Phonetic Keyboard */,
 				296D48731A0B6BEC004F9782 /* Urdu Phonetic KeyboardTests */,
+				296D48851A0B6BFE004F9782 /* Urdu Keyboard */,
 				296D485C1A0B6BEB004F9782 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +104,7 @@
 			children = (
 				296D485B1A0B6BEB004F9782 /* Urdu Phonetic Keyboard.app */,
 				296D48701A0B6BEC004F9782 /* Urdu Phonetic KeyboardTests.xctest */,
+				296D48841A0B6BFE004F9782 /* Urdu Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +147,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		296D48851A0B6BFE004F9782 /* Urdu Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				296D48881A0B6BFE004F9782 /* KeyboardViewController.swift */,
+				296D48861A0B6BFE004F9782 /* Supporting Files */,
+			);
+			path = "Urdu Keyboard";
+			sourceTree = "<group>";
+		};
+		296D48861A0B6BFE004F9782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				296D48871A0B6BFE004F9782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +174,12 @@
 				296D48571A0B6BEB004F9782 /* Sources */,
 				296D48581A0B6BEB004F9782 /* Frameworks */,
 				296D48591A0B6BEB004F9782 /* Resources */,
+				296D48901A0B6BFE004F9782 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				296D488B1A0B6BFE004F9782 /* PBXTargetDependency */,
 			);
 			name = "Urdu Phonetic Keyboard";
 			productName = "Urdu Phonetic Keyboard";
@@ -150,6 +204,23 @@
 			productReference = 296D48701A0B6BEC004F9782 /* Urdu Phonetic KeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		296D48831A0B6BFE004F9782 /* Urdu Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296D488D1A0B6BFE004F9782 /* Build configuration list for PBXNativeTarget "Urdu Keyboard" */;
+			buildPhases = (
+				296D48801A0B6BFE004F9782 /* Sources */,
+				296D48811A0B6BFE004F9782 /* Frameworks */,
+				296D48821A0B6BFE004F9782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Urdu Keyboard";
+			productName = "Urdu Keyboard";
+			productReference = 296D48841A0B6BFE004F9782 /* Urdu Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +236,9 @@
 					296D486F1A0B6BEC004F9782 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 296D485A1A0B6BEB004F9782;
+					};
+					296D48831A0B6BFE004F9782 = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -183,6 +257,7 @@
 			targets = (
 				296D485A1A0B6BEB004F9782 /* Urdu Phonetic Keyboard */,
 				296D486F1A0B6BEC004F9782 /* Urdu Phonetic KeyboardTests */,
+				296D48831A0B6BFE004F9782 /* Urdu Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +274,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		296D486E1A0B6BEC004F9782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296D48821A0B6BFE004F9782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +307,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		296D48801A0B6BFE004F9782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296D48891A0B6BFE004F9782 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +322,11 @@
 			isa = PBXTargetDependency;
 			target = 296D485A1A0B6BEB004F9782 /* Urdu Phonetic Keyboard */;
 			targetProxy = 296D48711A0B6BEC004F9782 /* PBXContainerItemProxy */;
+		};
+		296D488B1A0B6BFE004F9782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 296D48831A0B6BFE004F9782 /* Urdu Keyboard */;
+			targetProxy = 296D488A1A0B6BFE004F9782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -336,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Urdu Phonetic Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Urdu Phonetic Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +483,30 @@
 			};
 			name = Release;
 		};
+		296D488E1A0B6BFE004F9782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Urdu Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		296D488F1A0B6BFE004F9782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Urdu Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +532,14 @@
 			buildConfigurations = (
 				296D487E1A0B6BEC004F9782 /* Debug */,
 				296D487F1A0B6BEC004F9782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		296D488D1A0B6BFE004F9782 /* Build configuration list for PBXNativeTarget "Urdu Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296D488E1A0B6BFE004F9782 /* Debug */,
+				296D488F1A0B6BFE004F9782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
