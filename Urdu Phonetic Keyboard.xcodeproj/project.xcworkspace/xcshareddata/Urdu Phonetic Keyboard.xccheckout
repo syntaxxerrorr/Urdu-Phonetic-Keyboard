@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F66C8EF2-CFE8-4B62-9562-3D48D45F0456</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Urdu Phonetic Keyboard</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F4295872D63314A1B44DAF238EB992D152AD1ED</key>
+		<string>https://github.com/syntaxxerrorr/Urdu-Phonetic-Keyboard.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Urdu Phonetic Keyboard.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F4295872D63314A1B44DAF238EB992D152AD1ED</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/syntaxxerrorr/Urdu-Phonetic-Keyboard.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F4295872D63314A1B44DAF238EB992D152AD1ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F4295872D63314A1B44DAF238EB992D152AD1ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Urdu%20Phonetic%20Keyboard</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -21,37 +21,41 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let buttonTitles1 = ["ڑ", "ٹ", "آ", "ص", "ڈ", "غ","ح", "ض", "خ", "ذ",]
-        let buttonTitles2 = ["ق", "و", "ع", "ر", "ت", "ے", "ئ", "ی", "ہ", "پ"]
-        let buttonTitles3 = ["ا", "س", "د", "ف", "گ", "ھ", "ج", "ک", "ل"]
-        let buttonTitles4 = ["", "ز", "ش", "چ", "ط", "ب", "ن", "م", "⌫"]
-        let buttonTitles5 = ["🌐", "␣", "⏎"]
+//        Button LayOut
+        let buttonTitles1 = ["ڑ", "ٹ", "آ", "ص", "ڈ", "غ", "ح"]
+        let buttonTitles2 = ["ض", "خ", "ذ", "ژ", "ث", "ظ", "ں"]
+        let buttonTitles3 = ["ق", "و", "ع", "ر", "ت", "ے", "ئ", "ی", "ہ", "پ"]
+        let buttonTitles4 = ["ا", "س", "د", "ف", "گ", "ھ", "ج", "ک", "ل"]
+        let buttonTitles5 = ["", "ز", "ش", "چ", "ط", "ب", "ن", "م", "⌫"]
+        let buttonTitles6 = ["🌐", "وقفہ", "⏎"]
         
         var row1 = createRowOfButtons(buttonTitles1)
         var row2 = createRowOfButtons(buttonTitles2)
         var row3 = createRowOfButtons(buttonTitles3)
         var row4 = createRowOfButtons(buttonTitles4)
         var row5 = createRowOfButtons(buttonTitles5)
+        var row6 = createRowOfButtons(buttonTitles6)
         
         self.view.addSubview(row1)
         self.view.addSubview(row2)
         self.view.addSubview(row3)
         self.view.addSubview(row4)
         self.view.addSubview(row5)
+        self.view.addSubview(row6)
         
         row1.setTranslatesAutoresizingMaskIntoConstraints(false)
         row2.setTranslatesAutoresizingMaskIntoConstraints(false)
         row3.setTranslatesAutoresizingMaskIntoConstraints(false)
         row4.setTranslatesAutoresizingMaskIntoConstraints(false)
         row5.setTranslatesAutoresizingMaskIntoConstraints(false)
+         row6.setTranslatesAutoresizingMaskIntoConstraints(false)
         
-        addConstraintsToInputView(self.view, rowViews: [row1, row2, row3, row4, row5])
+        addConstraintsToInputView(self.view, rowViews: [row1, row2, row3, row4, row5, row6])
 
     }
     
     func createRowOfButtons(buttonTitles: [NSString]) -> UIView {
-        
+//        Buttons Angel and postion
         var buttons = [UIButton]()
         var keyboardRowView = UIView(frame: CGRectMake(0, 0, 320, 50))
         
@@ -91,7 +95,7 @@ class KeyboardViewController: UIInputViewController {
     
     
     func createButtonWithTitle(title: String) -> UIButton {
-        
+//        Buttons color and angel setup
         let button = UIButton.buttonWithType(.System) as UIButton
         button.frame = CGRectMake(0, 0, 30, 20)
         button.setTitle(title, forState: .Normal)
@@ -107,7 +111,7 @@ class KeyboardViewController: UIInputViewController {
     }
     
     func didTapButton(sender: AnyObject?) {
-        
+//        Bottom bar buttons Actions
         let button = sender as UIButton
         var proxy = textDocumentProxy as UITextDocumentProxy
         
@@ -117,7 +121,7 @@ class KeyboardViewController: UIInputViewController {
                 proxy.deleteBackward()
             case "⏎" :
                 proxy.insertText("\n")
-            case "␣" :
+            case "وقفہ" :
                 proxy.insertText(" ")
             case "🌐" :
                 self.advanceToNextInputMode()

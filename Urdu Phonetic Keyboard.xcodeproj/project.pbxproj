@@ -15,6 +15,7 @@
 		296D48771A0B6BEC004F9782 /* Urdu_Phonetic_KeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D48761A0B6BEC004F9782 /* Urdu_Phonetic_KeyboardTests.swift */; };
 		296D48891A0B6BFE004F9782 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D48881A0B6BFE004F9782 /* KeyboardViewController.swift */; };
 		296D488C1A0B6BFE004F9782 /* Urdu Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 296D48841A0B6BFE004F9782 /* Urdu Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		29A4B9601A0CE2F00081AFCF /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D48881A0B6BFE004F9782 /* KeyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -295,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				296D48631A0B6BEB004F9782 /* ViewController.swift in Sources */,
+				29A4B9601A0CE2F00081AFCF /* KeyboardViewController.swift in Sources */,
 				296D48611A0B6BEB004F9782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +528,7 @@
 				296D487C1A0B6BEC004F9782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		296D487D1A0B6BEC004F9782 /* Build configuration list for PBXNativeTarget "Urdu Phonetic KeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +537,7 @@
 				296D487F1A0B6BEC004F9782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		296D488D1A0B6BFE004F9782 /* Build configuration list for PBXNativeTarget "Urdu Keyboard" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +546,7 @@
 				296D488F1A0B6BFE004F9782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
